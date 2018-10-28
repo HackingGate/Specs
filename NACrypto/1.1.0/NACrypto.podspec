@@ -1,0 +1,18 @@
+Pod::Spec.new do |s|
+
+  s.name         = "NACrypto"
+  s.version      = "1.1.0"
+  s.summary      = "HMAC, Digest, AES, Twofish, SHA1, SHA2, SHA3, Keccak"
+  s.homepage     = "https://github.com/gabriel/NACrypto"
+  s.license      = { :type => "MIT" }
+  s.author       = { "Gabriel Handford" => "gabrielh@gmail.com" }
+  s.source       = { :git => "https://github.com/gabriel/NACrypto.git", :tag => s.version.to_s }
+  s.requires_arc = true
+
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
+
+  s.ios.source_files = 'NACrypto/**/*.{c,h,m}'
+  s.osx.source_files = 'NACrypto/**/*.{c,h,m}'
+
+end
